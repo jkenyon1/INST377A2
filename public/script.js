@@ -1,7 +1,9 @@
 
 //fetch data and store it
-
+const endpoint='https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
 const list=[];
+
+fetch(endpoint).then(data =>data.json().then(data => list.push(...data)))
 
 function findMatches(wordToMatch, list){
 
