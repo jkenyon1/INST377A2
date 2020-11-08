@@ -1,0 +1,20 @@
+body {
+    font: normal 18px/1.5 "Lucida Console", Monaco, monospace;
+    background: #7c2727; 
+    color: rgb(0, 0, 0); 
+
+    padding: 50px 0;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center; 
+    margin: 0 auto;
+  }
+  
+  .center {
+    margin: auto;
+    width: 30%;
+    padding: 50px;
+  }
