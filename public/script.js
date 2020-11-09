@@ -16,11 +16,9 @@ function findMatches(wordToMatch, list){
 function displayMatches(){
     const matchArray= findMatches(this.value, list);
     const html=matchArray.map(place=>{
-        const regex= new RegExp(this.value, 'gi');
-        const placeName= list.name.replace(regex,`<span class="h1">${this.value}</span>`)
         return `
         <li>
-            <span class="name">${placeName}</span>
+            <span class="name">${place.name}</span>
             <span class="category">${place.category}</span>
             <span class="address">${place.address_line_1},${place.city},
                 ${place.state},${place.zip}</span>
@@ -28,11 +26,11 @@ function displayMatches(){
         </li>
         `;
     }).join('');
-    suggestions.innerHTML= html;
+    suggestOutput.innerHTML= html;
 }
 
-const searchInput= document.quearySelector('.search');
-const suggestOutput= documnet.quearySelector('.suggestions');
+const searchInput= document.querySelector('.search');
+const suggestOutput= document.querySelector('.filtered');
 
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
