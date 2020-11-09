@@ -4,24 +4,24 @@ body {
     color: rgb(0, 0, 0); 
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     padding: 50px 0;
-  }
+}
 
-  .container {
+.container {
     width: 80%;
     max-width: 1200px;
     text-align: center; 
     margin: 0 auto;
-  }
+}
   
-  .center {
+.center {
     margin: auto;
     width: 30%;
     padding: 10px;
     text-align: center;
-    
-  }
+    font-size:3.7vw;
+}
   /*Styles for Search Form*/
-  input {
+input {
     background: #f1e3ce;
     width: 120%;
     padding: 10px;
@@ -32,12 +32,12 @@ body {
     border: 5px solid #f1e3ce;
     border-radius: 5px;
     font-size: 35px;
-  }
+}
 
-  .search-form {
+.search-form {
     max-width: 500px;
     margin: 20px auto;
-  }
+}
 
   /* Styles for filtered Resturants*/
   .filtered {
@@ -63,3 +63,4 @@ body {
   .name {
     font-weight: bold;
   }
+
