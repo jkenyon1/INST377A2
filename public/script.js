@@ -1,9 +1,7 @@
 
 //fetch data and store it
 const endpoint='https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
-const list=[],
-    searchInput = document.querySelector('.search'),
-    filtered = document.querySelector('.filtered');
+const list=[];
 
 fetch(endpoint)
     .then(blob => blob.json()
