@@ -20,18 +20,19 @@ function displayMatches(){
         return `
         <li>
             <span class="name">${place.name}</span>
+            <br>
             <span class="category">${place.category}</span>
-            <span class="address">${place.address_line_1},${place.city},
-                ${place.state},${place.zip}</span>
+            <br>
+            <span class="address">${place.address_line_1}, ${place.city},
+                ${place.state}, ${place.zip}</span>
             
         </li>
         `;
     }).join('');
-    suggestOutput.innerHTML= html;
+    filtered.innerHTML= html;
 }
 
-const searchInput= document.querySelector('.search');
-const suggestOutput= document.querySelector('.filtered');
+
 
 
 searchInput.addEventListener('change', displayMatches);
