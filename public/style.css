@@ -41,22 +41,25 @@ body {
 
   /* Styles for filtered Resturants*/
   .filtered {
-    margin: 0;
-    padding: 0;
+    margin: 15px;
+    padding: 15px;
     position: relative;
     white-space: normal;
-    margin-bottom: 19;
+    margin-bottom: 20px;
   }
   .filtered li {
-    background: rgb(34,193,195);
-    list-style: square;
-    /*border: linear-gradient(0deg, rgba(246,216,172,1) 32%, rgba(219,152,51,0.8242647400757178) 100%);*/
     border:transparent;
     border-radius: 5px;
-    margin:10;
-    margin-bottom: 19;
+    margin:10px;
+    margin-bottom: 20px;
     padding:10px;
     display: flex;
     justify-content: center;
-    /*background: linear-gradient(0deg, rgba(139,192,232,1) 11%, rgba(76,159,222,1) 72%); */
     background: linear-gradient(0deg, rgba(246,216,172,1) 32%, rgba(219,152,51,0.8242647400757178) 100%);
+    display:list-item;
+    list-style: none;
+  }
+
+  .name {
+    font-weight: bold;
+  }
