@@ -16,22 +16,41 @@ body {
   .center {
     margin: auto;
     width: 30%;
-    padding: 50px;
+    padding: 15px;
+    text-align: center;
+  }
+  /*Styles for Search Form*/
+  input {
+    background: #f1e3ce;
+    width: 120%;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    right: 10%;
+    text-align: left;
+    border: 5px solid #f1e3ce;
+    border-radius: 5px;
+    font-size: 35px;
   }
 
+  .search-form {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+
+  /* Styles for filtered Resturants*/
   .filtered {
     margin: 0;
     padding: 0;
     position: relative;
   }
   .filtered li {
-    background:#db9833;
+    background: rgb(34,193,195);
     list-style: none;
-    border-bottom: 1px solid #D8D8D8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    border: linear-gradient(0deg, rgba(139,192,232,1) 11%, rgba(76,159,222,1) 72%);
+    border-radius: 5px;
     margin:0;
     padding:20px;
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-  }
+    background: linear-gradient(0deg, rgba(139,192,232,1) 11%, rgba(76,159,222,1) 72%);  }
