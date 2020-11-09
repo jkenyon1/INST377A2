@@ -17,10 +17,8 @@ function findMatches(wordToMatch, list) {
 }
 
 function displayMatches(){
-    const matchArray = findMatches(this.value, list);
-    const html = matchArray.map(place => {
-        const regex= new RegExp(this.value, 'gi');
-        /*const placeName= list.name.replace(regex,`<span class="h1">${this.value}</span>`)*/
+    const matchArray= findMatches(this.value, list);
+    const html=matchArray.map(place=>{
         return `
         <li>
             <span class="name">${place.name}</span>
@@ -31,8 +29,11 @@ function displayMatches(){
         </li>
         `;
     }).join('');
-    filtered.innerHTML= html;
+    suggestOutput.innerHTML= html;
 }
+
+const searchInput= document.querySelector('.search');
+const suggestOutput= document.querySelector('.filtered');
 
 
 searchInput.addEventListener('change', displayMatches);
