@@ -32,7 +32,8 @@ function displayMatches(){
     filtered.innerHTML= html;
 }
 
-
+const searchInput= document.querySelector('.search');
+const suggestOutput= document.querySelector('.filtered');
 
 
 searchInput.addEventListener('change', displayMatches);
