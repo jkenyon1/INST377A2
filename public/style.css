@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     background: #7e9a9a; 
     color: rgb(0, 0, 0); 
-
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     padding: 50px 0;
   }
 
@@ -16,8 +16,9 @@ body {
   .center {
     margin: auto;
     width: 30%;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
+    
   }
   /*Styles for Search Form*/
   input {
@@ -43,14 +44,19 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    white-space: normal;
+    margin-bottom: 19;
   }
   .filtered li {
     background: rgb(34,193,195);
-    list-style: none;
-    border: linear-gradient(0deg, rgba(139,192,232,1) 11%, rgba(76,159,222,1) 72%);
+    list-style: square;
+    /*border: linear-gradient(0deg, rgba(246,216,172,1) 32%, rgba(219,152,51,0.8242647400757178) 100%);*/
+    border:transparent;
     border-radius: 5px;
-    margin:0;
-    padding:20px;
+    margin:10;
+    margin-bottom: 19;
+    padding:10px;
     display: flex;
-    justify-content: space-between;
-    background: linear-gradient(0deg, rgba(139,192,232,1) 11%, rgba(76,159,222,1) 72%);  }
+    justify-content: center;
+    /*background: linear-gradient(0deg, rgba(139,192,232,1) 11%, rgba(76,159,222,1) 72%); */
+    background: linear-gradient(0deg, rgba(246,216,172,1) 32%, rgba(219,152,51,0.8242647400757178) 100%);
