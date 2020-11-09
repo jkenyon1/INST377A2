@@ -29,7 +29,7 @@ function displayMatches(){
         </li>
         `;
     }).join('');
-    filtered.innerHTML= html;
+    suggestOutput.innerHTML= html;
 }
 
 const searchInput= document.querySelector('.search');
